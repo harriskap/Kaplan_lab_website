@@ -23,8 +23,8 @@
     <ul class="site-nav__links">
       <li><a href="#research">Research</a></li>
       <li><a href="#team">Team</a></li>
-      <li><a href="#publications">Publications</a></li>
       <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#join">Join Us</a></li>
     </ul>
   </div>
@@ -32,27 +32,23 @@
 
 <!-- ===== HERO ===== -->
 <section id="hero" class="hero" aria-label="Lab introduction">
-  <canvas id="neural-canvas" aria-hidden="true"></canvas>
   <div class="hero__content">
     <h1 class="hero__headline">
-      Brain development · Cell type diversity · Animal behavior
+      Brain development · Cell type diversity · Naturalistic behavior
     </h1>
   </div>
-  <!-- Image gallery — replace placeholder divs with <img src="..." alt="..."> -->
   <div class="hero__gallery" aria-hidden="true">
     <div class="hero__gallery-slide">
-      <img src="assets/images/hero-1.png" alt="Kaplan Lab research image 1">
+      <img src="assets/images/hero-1.png" alt="Brain development research">
     </div>
     <div class="hero__gallery-slide">
-      <div class="hero__gallery-ph">Image 2 — replace with photo</div>
+      <img src="assets/images/Circuit%20organizations.png" alt="Circuit organizations">
     </div>
     <div class="hero__gallery-slide">
-      <div class="hero__gallery-ph">Image 3 — replace with photo</div>
+      <img src="assets/images/GCaMP.png" alt="GCaMP calcium imaging">
     </div>
   </div>
-  <div class="hero__meta" aria-hidden="true">
-    <span class="hero__affil">Department of Biology · University of Virginia · Charlottesville, VA</span>
-  </div>
+
 </section>
 
 <!-- ===== RESEARCH ===== -->
@@ -79,10 +75,6 @@
     </div>
   </div>
 
-  <!-- Item 02 -->
-  <div class="container" style="padding-top: var(--sp-xl);">
-  </div>
-
   <!-- Item 02: text left / image right -->
   <div class="research-hero-block" data-reveal>
     <div class="research-hero-block__text">
@@ -102,21 +94,91 @@
   </div>
 </section>
 
+<!-- ===== PEOPLE / TEAM ===== -->
+<section id="team" class="section">
+  <div class="container">
+    <span class="section-label" data-reveal>Team</span>
+
+    <div class="member-grid mt-md" data-reveal>
+
+      <!-- Harris Kaplan -->
+      <div class="member-card">
+        <div class="member-card__photo">
+          <img src="assets/images/Harris%20Kaplan.png" alt="Harris Kaplan, Assistant Professor">
+        </div>
+        <div class="member-card__info">
+          <h3 class="member-card__name">Harris Kaplan</h3>
+          <p class="member-card__role">Assistant Professor</p>
+          <p class="member-card__dept">Department of Biology, University of Virginia</p>
+          <p class="member-card__email">
+            <span id="hk-email">mvr2qk@virginia.edu</span>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('mvr2qk@virginia.edu').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy';},1500);}.bind(this))" aria-label="Copy email address">Copy</button>
+          </p>
+          <div class="pi-links">
+            <a href="https://scholar.google.com/citations?user=4YEVa78AAAAJ" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaplan+HS&cauthor_id=32396858" target="_blank" rel="noopener" class="pi-link">PubMed</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ben Bellanger -->
+      <div class="member-card">
+        <div class="member-card__photo">
+          <img src="assets/images/Ben%20Bellanger.png" alt="Ben Bellanger, Senior Lab Technician">
+        </div>
+        <div class="member-card__info">
+          <h3 class="member-card__name">Ben Bellanger</h3>
+          <p class="member-card__role">Senior Lab Technician</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section id="news" class="section section--alt">
+  <div class="container">
+    <span class="section-label" data-reveal>News</span>
+    <div class="news-timeline mt-md" data-reveal>
+
+      <div class="tl-item">
+        <div class="tl-item__date">August 2026 <span class="tag tag--lab">Lab Opening</span></div>
+        <h4>Kaplan Lab opens at the University of Virginia</h4>
+        <p>Harris Kaplan joins the UVA Department of Biology as Assistant Professor. The lab is located in Gilmer Hall and is actively recruiting graduate students and postdoctoral researchers.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">August 2026 <span class="tag tag--lab">New Member</span></div>
+        <h4>Ben Bellanger joins the lab</h4>
+        <p>Ben Bellanger joins the Kaplan Lab as Senior Lab Technician. Welcome, Ben!</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">August 2025 <span class="tag tag--publication">Publication</span></div>
+        <h4>Paper in <em>Nature</em>: hypothalamic cell type development</h4>
+        <p>Kaplan, Logeman, Zhang, Yawitz, Dulac et al. publish a molecular-developmental atlas of the hypothalamic preoptic area showing how experience shapes cell-type identity. <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener">Read →</a></p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">January 2025 <span class="tag tag--publication">Publication</span></div>
+        <h4>Review in <em>Physiological Reviews</em>: neurobiology of parenting</h4>
+        <p>Kaplan, Horvath, Rahman, and Dulac publish a comprehensive review of parental care circuits across mammals. <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener">Read →</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== PUBLICATIONS ===== -->
-<section id="publications" class="section section--alt">
+<section id="publications" class="section">
   <div class="container">
     <span class="section-label" data-reveal>Publications</span>
 
     <!-- Cover art + featured paper -->
     <div class="pub-hero" data-reveal>
-      <!-- Replace cover-art-placeholder with: <div class="cover-art"><img src="assets/images/nature-cover.jpg" alt="Nature 647 cover art"></div> -->
-      <div class="cover-art-placeholder">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:.3; margin-bottom:8px;">
-          <rect x="2" y="2" width="32" height="32" rx="3" stroke="#1B3A6B" stroke-width="2"/>
-          <circle cx="13" cy="13" r="4" stroke="#1B3A6B" stroke-width="1.5"/>
-          <path d="M2 26l8-8 6 6 4-4 14 10" stroke="#C8870A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Nature cover art<br>— add image file to<br>assets/images/
+      <div class="cover-art-placeholder" style="border: 1px solid var(--border-mid); background: var(--white); overflow: hidden; padding: 0;">
+        <img src="assets/images/Nature%20Cover.png" alt="Nature cover article: Sensory input, sex, and function shape hypothalamic cell type development" style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="fp" style="flex:1; margin-top:0;">
         <div class="fp__left">
@@ -134,20 +196,12 @@
               neuronal function jointly shape cell-type identity during postnatal development.
             </p>
           </div>
-          <a href="https://doi.org/10.1038/s41586-025-08614-3" target="_blank" rel="noopener" class="fp__link">
+          <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener" class="fp__link">
             Read paper
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
-    </div>
-
-    <!-- Filters -->
-    <div class="pub-filters" role="group" aria-label="Filter publications" data-reveal>
-      <button class="pub-filter active" data-filter="all">All</button>
-      <button class="pub-filter" data-filter="first">First / Corresponding Author</button>
-      <button class="pub-filter" data-filter="review">Reviews</button>
-      <button class="pub-filter" data-filter="preprint">Preprints</button>
     </div>
 
     <!-- 2025 -->
@@ -161,7 +215,7 @@
             <p class="pub-item__title">Sensory input, sex, and function shape hypothalamic cell type development</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Logeman BL, Zhang K, Yawitz TA, Dulac C</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1038/s41586-025-08614-3" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/39939753/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -173,7 +227,7 @@
             <p class="pub-item__title">The neurobiology of parenting and infant-evoked aggression</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Horvath PM, Rahman MM, Dulac C</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/39052003/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -185,7 +239,7 @@
             <p class="pub-item__title">The new frontier in understanding human and mammalian brain development</p>
             <p class="pub-item__authors">Nowakowski TJ, Nano PR, Matho KS, <strong>Kaplan HS</strong>, et al.</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1038/s41586-025-08590-8" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1038/s41586-025-08590-8" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/39939745/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -226,7 +280,7 @@
             <p class="pub-item__title">Long-term, high-resolution in vivo calcium imaging in pigeons</p>
             <p class="pub-item__authors">Nimpf S, Nordmann GC, Cushion T, <strong>Kaplan HS</strong>, Keays DA</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.crmeth.2024.100709" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1016/j.crmeth.2024.100709" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/38340722/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -245,7 +299,7 @@
             <p class="pub-item__title">Nested neuronal dynamics orchestrate a behavioral hierarchy across timescales</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Thula OS, Khoss N, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.neuron.2019.10.037" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1016/j.neuron.2019.10.037" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/32396858/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -257,7 +311,7 @@
             <p class="pub-item__title">Brain-wide representations of ongoing behavior: a universal principle?</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.conb.2020.02.008" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1016/j.conb.2020.02.008" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/32199217/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -276,7 +330,7 @@
             <p class="pub-item__title">Sensorimotor integration in <em>C. elegans</em>: a reappraisal towards dynamic and distributed computations</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Nichols ALA, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1098/rstb.2018.0208" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1098/rstb.2018.0208" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -287,7 +341,7 @@
             <p class="pub-item__title">Sensorimotor integration for decision making: how the worm steers</p>
             <p class="pub-item__authors"><strong>Kaplan HS</strong>, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.neuron.2018.01.005" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1016/j.neuron.2018.01.005" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -305,7 +359,7 @@
             <p class="pub-item__title">Regulation of two motor patterns enables the gradual adjustment of locomotion strategy in <em>C. elegans</em></p>
             <p class="pub-item__authors">Hums I, Riedl J, Mende F, Kato S, <strong>Kaplan HS</strong>, Latham R, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.7554/eLife.14116" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.7554/eLife.14116" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -323,7 +377,7 @@
             <p class="pub-item__title">Global brain dynamics embed the motor command sequence of <em>Caenorhabditis elegans</em></p>
             <p class="pub-item__authors">Kato S, <strong>Kaplan HS</strong>, Schrödel T, Skora S, Lindsay TH, Yemini E, Lockery S, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.cell.2015.09.034" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1016/j.cell.2015.09.034" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/26478179/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
@@ -342,250 +396,29 @@
             <p class="pub-item__title">Differentially timed extracellular signals synchronize pacemaker neuron clocks</p>
             <p class="pub-item__authors">Collins B, <strong>Kaplan HS</strong>, Cavey M, Lelito KR, Bhatt D, et al.</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1371/journal.pbio.1001959" target="_blank" rel="noopener" class="pub-link">DOI</a>
+              <a href="https://doi.org/10.1371/journal.pbio.1001959" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- ===== PEOPLE ===== -->
-<section id="team" class="section">
-  <div class="container">
-    <span class="section-label" data-reveal>Team</span>
-
-    <div class="pi-card mt-md" data-reveal>
-      <div>
-        <div class="pi-card__photo" aria-label="Photo placeholder for Harris Kaplan">
-          <span class="pi-card__initials" aria-hidden="true">HK</span>
-        </div>
-      </div>
-      <div>
-        <h2 style="font-size:2rem; margin-bottom:4px;">Harris Kaplan</h2>
-        <p class="pi-card__role">Assistant Professor of Biology</p>
-        <p class="pi-card__institution">Department of Biology, University of Virginia</p>
-        <div class="pi-card__bio">
-          <p>
-            Harris grew up in New Jersey and studied biology at New York University,
-            where he worked in Justin Blau's lab on the neuronal circuits that generate
-            circadian rhythms in <em>Drosophila</em>. This introduced him to the idea
-            that specific, genetically defined neurons have precise functions — a thread
-            that has run through his career ever since.
-          </p>
-          <p>
-            For his PhD at the IMP Vienna with Manuel Zimmer, Harris developed whole-brain
-            imaging techniques in <em>C. elegans</em> and used them to discover how
-            brain-wide neural dynamics encode ongoing behavior, producing studies in
-            <em>Cell</em> (2015) and <em>Neuron</em> (2020).
-          </p>
-          <p>
-            As an HHMI Fellow of the Jane Coffin Childs Fund, Harris did postdoctoral
-            research in Catherine Dulac's lab at Harvard, shifting focus to the mouse
-            hypothalamus and questions of how this ancestral brain region drives parental
-            care. His 2025 <em>Nature</em> paper showed that sensory experience, sex,
-            and neuronal function jointly shape hypothalamic cell-type identity during
-            postnatal development.
-          </p>
-        </div>
-        <div class="callout" style="margin-top:var(--sp-lg);">
-          <p>Harris is an HHMI Fellow of the Jane Coffin Childs Memorial Fund for Medical Research.</p>
-        </div>
-        <div class="pi-card__edu" style="margin-top:var(--sp-lg);">
-          <h5>Education &amp; Training</h5>
-          <ul>
-            <li><strong>Postdoctoral Fellow</strong> Harvard University · Dulac Lab · 2020–2026</li>
-            <li><strong>PhD, Neurobiology</strong> IMP Vienna · Zimmer Lab · 2019</li>
-            <li><strong>BA, Biology</strong> New York University · Blau Lab · 2012</li>
-          </ul>
-        </div>
-        <div class="pi-links mt-md">
-          <a href="mailto:mvr2qk@virginia.edu" class="pi-link">Email</a>
-          <a href="https://scholar.google.com/citations?user=4YEVa78AAAAJ" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaplan+HS&cauthor_id=32396858" target="_blank" rel="noopener" class="pi-link">PubMed</a>
-          <a href="https://bio.as.virginia.edu/people/harris-kaplan" target="_blank" rel="noopener" class="pi-link">UVA Profile</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== NEWS ===== -->
-<section id="news" class="section section--alt">
-  <div class="container">
-    <span class="section-label" data-reveal>News</span>
-    <div class="news-timeline mt-md" data-reveal>
-
-      <div class="tl-item">
-        <div class="tl-item__date">May 2026 <span class="tag tag--lab">Lab Opening</span></div>
-        <h4>Kaplan Lab opens at the University of Virginia</h4>
-        <p>Harris Kaplan joins the UVA Department of Biology as Assistant Professor. The lab is located in Gilmer Hall and is actively recruiting graduate students and postdoctoral researchers interested in developmental neuroscience.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">March 2026 <span class="tag tag--talk">Seminar</span></div>
-        <h4>Neuroscience Seminar at Mount Sinai</h4>
-        <p>Harris presented work on infant brain circuits and hypothalamic development at the Neuroscience Seminar Series at the Icahn School of Medicine at Mount Sinai.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">January 2026 <span class="tag tag--talk">Seminar</span></div>
-        <h4>Stanford Biology Seminar: "A coming-of-age story"</h4>
-        <p>Harris gave an invited talk in the Stanford Biology Department Seminar Series on neuronal control of behavior in early life.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">December 2025 <span class="tag tag--preprint">Preprint</span></div>
-        <h4>New preprint: brain-immune interactions and sickness states</h4>
-        <p>Sullivan, Wong, Kaplan, et al. show that brain-immune interactions generate pathogen-specific sickness states, linking immune signals to defined neural circuits.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">December 2025 <span class="tag tag--preprint">Preprint</span></div>
-        <h4>New preprint: hormonal signaling and parenting circuits</h4>
-        <p>Logeman, Horvath, Kaplan, Dulac et al. show that cell type-specific hormonal signaling configures hypothalamic circuits for parenting.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">November 2025 <span class="tag tag--publication">Publication</span></div>
-        <h4>Perspective in <em>Nature</em>: the new frontier in brain development</h4>
-        <p>Nowakowski, Nano, Matho, Kaplan et al. contribute a perspective piece to a special <em>Nature</em> issue on brain development. <a href="https://doi.org/10.1038/s41586-025-08590-8" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">August 2025 <span class="tag tag--publication">Publication</span></div>
-        <h4>Paper in <em>Nature</em>: hypothalamic cell type development</h4>
-        <p>Kaplan, Logeman, Zhang, Yawitz, Dulac et al. publish a molecular-developmental atlas of the hypothalamic preoptic area showing how experience shapes cell-type identity. <a href="https://doi.org/10.1038/s41586-025-08614-3" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">January 2025 <span class="tag tag--publication">Publication</span></div>
-        <h4>Review in <em>Physiological Reviews</em>: neurobiology of parenting</h4>
-        <p>Kaplan, Horvath, Rahman, and Dulac publish a comprehensive review of parental care circuits across mammals. <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">January 2020 <span class="tag tag--publication">Publication</span></div>
-        <h4>Paper in <em>Neuron</em>: nested dynamics and behavioral hierarchy</h4>
-        <p>Kaplan, Thula, Khoss, and Zimmer demonstrate that nested neuronal dynamics orchestrate a behavioral hierarchy in <em>C. elegans</em>. <a href="https://doi.org/10.1016/j.neuron.2019.10.037" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">October 2015 <span class="tag tag--publication">Publication</span></div>
-        <h4>Paper in <em>Cell</em>: global brain dynamics in <em>C. elegans</em></h4>
-        <p>Kato, Kaplan, Schrödel, Skora et al. show that brain-wide neural dynamics embed the motor command sequence underlying locomotion. <a href="https://doi.org/10.1016/j.cell.2015.09.034" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-    </div>
   </div>
 </section>
 
 <!-- ===== JOIN US / CONTACT ===== -->
-<section id="join" class="section">
+<section id="join" class="section section--alt">
   <div class="container">
     <span class="section-label" data-reveal>Join Us</span>
     <div class="section-intro" data-reveal>
       <h2>Open Positions</h2>
-      <p class="lead mt-md">
-        The Kaplan Lab is growing. We welcome applications from motivated people at all
-        career stages who are excited about developmental neuroscience.
-      </p>
     </div>
 
-    <div class="join-grid" data-reveal-stagger>
-      <div class="join-card">
-        <div class="join-card__num">01</div>
-        <h4>Graduate Students</h4>
-        <p>We recruit PhD students through the <strong>UVA Neuroscience Graduate Program</strong> and the <strong>Biomedical Sciences Graduate Program</strong>. Rotation students are welcome at any time of year.</p>
-        <ul>
-          <li>Email Harris with your CV and a brief paragraph on your interests</li>
-          <li>Apply to UVA graduate programs in September–December</li>
-          <li>Rotation projects available year-round</li>
-        </ul>
-      </div>
-      <div class="join-card">
-        <div class="join-card__num">02</div>
-        <h4>Postdoctoral Fellows</h4>
-        <p>We are actively looking for postdocs with experience in in vivo physiology, mouse behavior, single-cell genomics, or circuit neuroscience. Positions available immediately.</p>
-        <ul>
-          <li>Email Harris with your CV and a 1-page description of your research interests</li>
-          <li>Include names of 2–3 references</li>
-          <li>Positions available immediately</li>
-        </ul>
-      </div>
-      <div class="join-card">
-        <div class="join-card__num">03</div>
-        <h4>Undergraduates</h4>
-        <p>We welcome motivated undergraduate researchers who can commit to at least one academic year and have a genuine interest in neuroscience.</p>
-        <ul>
-          <li>Email Harris with your CV and a brief statement of interest</li>
-          <li>Reach out in the fall for the following spring</li>
-          <li>Credit and work-study options available</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="contact-grid" style="margin-top:var(--sp-2xl);" data-reveal>
-      <div>
-        <div class="contact-block">
-          <p class="contact-block__label">Principal Investigator</p>
-          <p class="contact-block__value">Harris Kaplan, PhD<br>Assistant Professor of Biology</p>
-        </div>
-        <div class="contact-block">
-          <p class="contact-block__label">Email</p>
-          <p class="contact-block__value"><a href="mailto:mvr2qk@virginia.edu">mvr2qk@virginia.edu</a></p>
-        </div>
-        <div class="contact-block">
-          <p class="contact-block__label">Address</p>
-          <p class="contact-block__value">Department of Biology<br>University of Virginia<br>Gilmer Hall<br>Charlottesville, VA 22904</p>
-        </div>
-        <div class="contact-block">
-          <p class="contact-block__label">Find us online</p>
-          <div style="display:flex; flex-direction:column; gap:8px; margin-top:4px;">
-            <a href="https://scholar.google.com/citations?user=4YEVa78AAAAJ" target="_blank" rel="noopener" class="pi-link" style="width:fit-content;">Google Scholar</a>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaplan+HS&cauthor_id=32396858" target="_blank" rel="noopener" class="pi-link" style="width:fit-content;">PubMed</a>
-            <a href="https://bio.as.virginia.edu/people/harris-kaplan" target="_blank" rel="noopener" class="pi-link" style="width:fit-content;">UVA Profile</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-card">
-        <h3>Send a message</h3>
-        <p>For prospective lab members, please briefly describe your background and what excites you about the lab's work.</p>
-        <form action="mailto:mvr2qk@virginia.edu" method="post" enctype="text/plain" novalidate>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-md);">
-            <div class="form-group">
-              <label class="form-label" for="name">Full name <span style="color:#DC2626;">*</span></label>
-              <input type="text" id="name" name="name" class="form-control" required autocomplete="name" placeholder="Jane Smith">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Email address <span style="color:#DC2626;">*</span></label>
-              <input type="email" id="email" name="email" class="form-control" required autocomplete="email" placeholder="jane@university.edu">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="position">I am a …</label>
-            <select id="position" name="position" class="form-control">
-              <option value="">Select your role</option>
-              <option value="prospective-grad">Prospective graduate student</option>
-              <option value="prospective-postdoc">Prospective postdoctoral fellow</option>
-              <option value="prospective-undergrad">Prospective undergraduate</option>
-              <option value="collaborator">Potential collaborator</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="message">Message <span style="color:#DC2626;">*</span></label>
-            <textarea id="message" name="message" class="form-control" required rows="5" placeholder="Tell us about yourself and your interests…"></textarea>
-          </div>
-          <div style="display:flex; justify-content:flex-end; margin-top:var(--sp-sm);">
-            <button type="submit" class="btn btn--primary">Send message →</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <ul class="open-positions" data-reveal>
+      <li><strong>Graduate students</strong> — We accept rotation students year-round through the UVA Biology and Biomedical Sciences Graduate Programs. Email Harris with your CV and a brief note on your interests.</li>
+      <li><strong>Postdoctoral fellows</strong> — Email Harris your CV, a short description of your research interests, and names of 2–3 references.</li>
+      <li><strong>Undergraduates</strong> — Email Harris with your CV and a brief statement of interest.</li>
+    </ul>
   </div>
 </section>
 
@@ -601,6 +434,8 @@
       <p class="footer-nav__title">Research</p>
       <ul>
         <li><a href="#research">What We Study</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
       </ul>
     </div>
