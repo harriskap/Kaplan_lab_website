@@ -33,11 +33,12 @@
 <!-- ===== HERO ===== -->
 <section id="hero" class="hero" aria-label="Lab introduction">
   <div class="hero__content">
+    <h2 class="hero__lab-title">Kaplan Lab</h2>
     <h1 class="hero__headline">
       Brain development · Cell type diversity · Naturalistic behavior
     </h1>
   </div>
-  <div class="hero__gallery" aria-hidden="true">
+  <div class="hero__gallery" aria-label="Lab image gallery">
     <div class="hero__gallery-slide">
       <img src="assets/images/hero-1.png" alt="Brain development research">
     </div>
@@ -54,13 +55,12 @@
 <!-- ===== RESEARCH ===== -->
 <section id="research" class="section" style="padding: var(--sp-xl) 0;">
   <div class="container" style="padding-bottom: var(--sp-lg);">
-    <span class="section-label" data-reveal style="font-size:.95rem; letter-spacing:.14em;">What We Study</span>
+    <span class="section-label" data-reveal style="font-size:.95rem; letter-spacing:.14em;">Our research</span>
   </div>
 
   <!-- Item 01: full-bleed hero block -->
   <div class="research-hero-block" data-reveal>
     <div class="research-hero-block__text">
-      <span class="research-hero-block__num">01</span>
       <h3>How does the brain control behavior in early life?</h3>
       <p>
         The brain does not "wait" until it is fully mature before it functions.
@@ -68,6 +68,8 @@
         and drive behavior, in newborns and even in the womb. We combine molecular
         and neurophysiological approaches to investigate circuits in the infant brain
         underlying (1) sleep and (2) social interactions with parents and siblings.
+        Our goal is to understand how the immature brain functions, and how those
+        functions feed back on the brain to affect brain development.
       </p>
     </div>
     <div class="research-hero-block__video">
@@ -78,14 +80,15 @@
   <!-- Item 02: text left / image right -->
   <div class="research-hero-block" data-reveal>
     <div class="research-hero-block__text">
-      <span class="research-hero-block__num">02</span>
       <h3>Subcortical cell type diversity: the brain's "dark matter"</h3>
       <p>
         Subcortical brain regions like the hypothalamus and brainstem harbor 1000s
         of distinct neuronal types. The behavioral and physiological functions of
         the vast majority of these neuron types are unknown. We develop
         approaches to target these neuron types in a high-throughput manner,
-        "de-orphan" their functions, and map their connectivity.
+        "de-orphan" their functions, and map their connectivity. This helps us
+        understand subcortical circuits underlying behavior and physiology, for
+        example as labeled lines or distributed networks.
       </p>
     </div>
     <div class="research-hero-block__video">
@@ -108,27 +111,26 @@
         </div>
         <div class="member-card__info">
           <h3 class="member-card__name">Harris Kaplan</h3>
-          <p class="member-card__role">Assistant Professor</p>
-          <p class="member-card__dept">Department of Biology, University of Virginia</p>
-          <p class="member-card__email">
-            <span id="hk-email">mvr2qk@virginia.edu</span>
-            <button class="copy-btn" onclick="navigator.clipboard.writeText('mvr2qk@virginia.edu').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy';},1500);}.bind(this))" aria-label="Copy email address">Copy</button>
+          <p class="member-card__role">
+            <a href="https://bio.as.virginia.edu/people/harris-kaplan" target="_blank" rel="noopener" class="member-card__role-link">Assistant Professor</a>
           </p>
-          <div class="pi-links">
-            <a href="https://scholar.google.com/citations?user=4YEVa78AAAAJ" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaplan+HS&cauthor_id=32396858" target="_blank" rel="noopener" class="pi-link">PubMed</a>
-          </div>
+          <p class="member-card__email">
+            <a href="mailto:mvr2qk@virginia.edu" class="member-card__email-link" aria-label="Email Harris Kaplan">E-mail</a>
+          </p>
         </div>
       </div>
 
       <!-- Ben Bellanger -->
       <div class="member-card">
         <div class="member-card__photo">
-          <img src="assets/images/Ben%20Bellanger.png" alt="Ben Bellanger, Senior Lab Technician">
+          <img src="assets/images/Ben%20Bellanger.jpg" alt="Ben Bellanger, Senior Lab Technician">
         </div>
         <div class="member-card__info">
           <h3 class="member-card__name">Ben Bellanger</h3>
-          <p class="member-card__role">Senior Lab Technician</p>
+          <p class="member-card__role">Senior lab technician<br>and lab manager</p>
+          <p class="member-card__email">
+            <a href="mailto:qwg3by@virginia.edu" class="member-card__email-link" aria-label="Email Ben Bellanger">E-mail</a>
+          </p>
         </div>
       </div>
 
@@ -143,27 +145,15 @@
     <div class="news-timeline mt-md" data-reveal>
 
       <div class="tl-item">
-        <div class="tl-item__date">August 2026 <span class="tag tag--lab">Lab Opening</span></div>
-        <h4>Kaplan Lab opens at the University of Virginia</h4>
+        <div class="tl-item__date">August 2026</div>
+        <h4>Ben Bellanger joins the lab!</h4>
+        <p>Ben Bellanger joins the Kaplan Lab as senior lab technician and lab manager. Welcome, Ben!</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">August 2026</div>
+        <h4>Kaplan Lab opens at the University of Virginia!</h4>
         <p>Harris Kaplan joins the UVA Department of Biology as Assistant Professor. The lab is located in Gilmer Hall and is actively recruiting graduate students and postdoctoral researchers.</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">August 2026 <span class="tag tag--lab">New Member</span></div>
-        <h4>Ben Bellanger joins the lab</h4>
-        <p>Ben Bellanger joins the Kaplan Lab as Senior Lab Technician. Welcome, Ben!</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">August 2025 <span class="tag tag--publication">Publication</span></div>
-        <h4>Paper in <em>Nature</em>: hypothalamic cell type development</h4>
-        <p>Kaplan, Logeman, Zhang, Yawitz, Dulac et al. publish a molecular-developmental atlas of the hypothalamic preoptic area showing how experience shapes cell-type identity. <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener">Read →</a></p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-item__date">January 2025 <span class="tag tag--publication">Publication</span></div>
-        <h4>Review in <em>Physiological Reviews</em>: neurobiology of parenting</h4>
-        <p>Kaplan, Horvath, Rahman, and Dulac publish a comprehensive review of parental care circuits across mammals. <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener">Read →</a></p>
       </div>
 
     </div>
@@ -178,7 +168,7 @@
     <!-- Cover art + featured paper -->
     <div class="pub-hero" data-reveal>
       <div class="cover-art-placeholder" style="border: 1px solid var(--border-mid); background: var(--white); overflow: hidden; padding: 0;">
-        <img src="assets/images/Nature%20Cover.png" alt="Nature cover article: Sensory input, sex, and function shape hypothalamic cell type development" style="width:100%; height:100%; object-fit:cover; display:block;">
+        <img src="assets/images/Nature%20Cover.png" alt="Nature cover article: Sensory input, sex, and function shape hypothalamic cell type development" style="width:100%; height:auto; object-fit:contain; display:block;">
       </div>
       <div class="fp" style="flex:1; margin-top:0;">
         <div class="fp__left">
@@ -187,15 +177,7 @@
         </div>
         <div class="fp__right">
           <h3 class="fp__title">Sensory input, sex, and function shape hypothalamic cell type development</h3>
-          <p class="fp__authors">Kaplan HS, Logeman BL, Zhang K, Yawitz TA, et al. &nbsp;·&nbsp; <em>Nature</em> 647, 157–168 (2025)</p>
-          <div class="fp__excerpt">
-            <p>
-              Using single-cell transcriptomics combined with functional recordings and
-              genetic perturbations in mice, we built a molecular-developmental atlas of
-              the hypothalamic preoptic area — showing that sensory experience, sex, and
-              neuronal function jointly shape cell-type identity during postnatal development.
-            </p>
-          </div>
+          <p class="fp__authors"><strong><u>Kaplan HS</u></strong>, Logeman BL, Zhang K, Yawitz TA, Santiago C, Sohail N, Talay M, Seo C, Naumenko S, Ho Sui SJ, Ginty DD, Ren B, Dulac C &nbsp;·&nbsp; <em>Nature</em> 647, 157–168 (2025)</p>
           <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener" class="fp__link">
             Read paper
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -204,65 +186,62 @@
       </div>
     </div>
 
+    <div class="pi-links" style="margin-top:8px; margin-bottom:var(--sp-lg);">
+      <a href="https://scholar.google.com/citations?user=4YEVa78AAAAJ" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaplan+HS&cauthor_id=32396858" target="_blank" rel="noopener" class="pi-link">PubMed</a>
+    </div>
+
     <!-- 2025 -->
     <div class="pub-year-group">
       <div class="pub-year-group__label">2025</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--nature">Nature</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Nature</em> 647, 157–168 · 2025</span></div>
             <p class="pub-item__title">Sensory input, sex, and function shape hypothalamic cell type development</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Logeman BL, Zhang K, Yawitz TA, Dulac C</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong>, Logeman BL, Zhang K, Yawitz TA, Santiago C, Sohail N, Talay M, Seo C, Naumenko S, Ho Sui SJ, Ginty DD, Ren B, Dulac C</p>
             <div class="pub-item__links">
               <a href="https://www.nature.com/articles/s41586-025-08603-0" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/39939753/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="review">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--phrv">Physiol Rev</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Physiological Reviews</em> 105, 315–381 · 2025</span></div>
             <p class="pub-item__title">The neurobiology of parenting and infant-evoked aggression</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Horvath PM, Rahman MM, Dulac C</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong><sup>*</sup>, Horvath PM<sup>*</sup>, Rahman MM<sup>*</sup>, Dulac C <span class="eq-contrib">*Equal contribution.</span></p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1152/physrev.00036.2023" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/39052003/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--nature">Nature</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Nature</em> 647, 51–59 · 2025</span></div>
             <p class="pub-item__title">The new frontier in understanding human and mammalian brain development</p>
-            <p class="pub-item__authors">Nowakowski TJ, Nano PR, Matho KS, <strong>Kaplan HS</strong>, et al.</p>
+            <p class="pub-item__authors">Nowakowski TJ, Nano PR, Matho KS, Chen X, Corrigan EK, Ding W, Gao Y, Heffel M, Jayakumar J, <strong><u>Kaplan HS</u></strong>, Kronman FN, Kovner R, Mannens CCA, Song M, Steyert MR, Venkatesan S, Wallace JL, Wang L, Werner JM, Zhang D, Yuan G, Zuo G, Ament SA, Colantuoni C, Dulac C, Fan R, Gillis J, Kriegstein AR, Krienen FM, Kim Y, Linnarsson S, Mitra PP, Pollen AA, Sestan N, Tward DJ, van Velthoven CTJ, Yao Z, Bhaduri A, Zeng H</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1038/s41586-025-08590-8" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/39939745/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
+              <a href="https://doi.org/10.1038/s41586-025-09652-1" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="preprint">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--biorxiv">bioRxiv</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>bioRxiv</em> · 2025 · Preprint</span></div>
             <p class="pub-item__title">Brain-immune interactions generate pathogen-specific sickness states</p>
-            <p class="pub-item__authors">Sullivan ZA, Wong BJ, …, <strong>Kaplan HS</strong>, et al.</p>
+            <p class="pub-item__authors">Sullivan ZA, Wong BJ, Kapoor V, Vincze PK, <strong><u>Kaplan HS</u></strong>, Giraudet P, Watson BR, Misherghi A, Lourido S, Moffitt JR, Dulac C</p>
             <div class="pub-item__links">
-              <a href="https://www.biorxiv.org" target="_blank" rel="noopener" class="pub-link">bioRxiv</a>
+              <a href="https://doi.org/10.64898/2025.12.06.692770" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="preprint">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--biorxiv">bioRxiv</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>bioRxiv</em> · 2025 · Preprint</span></div>
             <p class="pub-item__title">Cell type-specific hormonal signaling configures hypothalamic circuits for parenting</p>
-            <p class="pub-item__authors">Logeman BL, Horvath PM, …, <strong>Kaplan HS</strong>, Dulac C</p>
+            <p class="pub-item__authors">Logeman BL, Horvath PM, Talay M, Kapoor V, <strong><u>Kaplan HS</u></strong>, Dulac C</p>
             <div class="pub-item__links">
-              <a href="https://www.biorxiv.org" target="_blank" rel="noopener" class="pub-link">bioRxiv</a>
+              <a href="https://doi.org/10.64898/2025.12.11.693766" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -274,14 +253,12 @@
       <div class="pub-year-group__label">2024</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--crm">Cell Rep Methods</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Cell Reports Methods</em> 4 (2) · 2024</span></div>
             <p class="pub-item__title">Long-term, high-resolution in vivo calcium imaging in pigeons</p>
-            <p class="pub-item__authors">Nimpf S, Nordmann GC, Cushion T, <strong>Kaplan HS</strong>, Keays DA</p>
+            <p class="pub-item__authors">Nimpf S, <strong><u>Kaplan HS</u></strong>, Nordmann GC, Cushion T, Keays DA</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.crmeth.2024.100709" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/38340722/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
+              <a href="https://doi.org/10.1016/j.crmeth.2024.100711" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -293,26 +270,22 @@
       <div class="pub-year-group__label">2020</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--neuron">Neuron</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Neuron</em> 105, 562–576 · 2020</span></div>
             <p class="pub-item__title">Nested neuronal dynamics orchestrate a behavioral hierarchy across timescales</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Thula OS, Khoss N, Zimmer M</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong><sup>*</sup>, Salazar Thula O<sup>*</sup>, Khoss N, Zimmer M <span class="eq-contrib">*Equal contribution.</span></p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1016/j.neuron.2019.10.037" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/32396858/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="first review">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--currop">Curr Opin Neurobiol</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Current Opinion in Neurobiology</em> 64, 60–69 · 2020</span></div>
             <p class="pub-item__title">Brain-wide representations of ongoing behavior: a universal principle?</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Zimmer M</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong>, Zimmer M</p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1016/j.conb.2020.02.008" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/32199217/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
         </div>
@@ -324,24 +297,22 @@
       <div class="pub-year-group__label">2018</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first review">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--ptrsl">Phil Trans R Soc B</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Phil Trans R Soc B</em> 373 (1758) · 2018</span></div>
             <p class="pub-item__title">Sensorimotor integration in <em>C. elegans</em>: a reappraisal towards dynamic and distributed computations</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Nichols ALA, Zimmer M</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong>, Denham JE, Ranner T, Cohen N</p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1098/rstb.2018.0208" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--neuron">Neuron</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Neuron</em> 97, 258–260 · 2018 · Preview</span></div>
             <p class="pub-item__title">Sensorimotor integration for decision making: how the worm steers</p>
-            <p class="pub-item__authors"><strong>Kaplan HS</strong>, Zimmer M</p>
+            <p class="pub-item__authors"><strong><u>Kaplan HS</u></strong>, Zimmer M</p>
             <div class="pub-item__links">
-              <a href="https://doi.org/10.1016/j.neuron.2018.01.005" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
+              <a href="https://doi.org/10.1016/j.neuron.2017.12.042" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
           </div>
         </div>
@@ -353,11 +324,10 @@
       <div class="pub-year-group__label">2016</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--elife">eLife</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>eLife</em> 5, e14116 · 2016</span></div>
             <p class="pub-item__title">Regulation of two motor patterns enables the gradual adjustment of locomotion strategy in <em>C. elegans</em></p>
-            <p class="pub-item__authors">Hums I, Riedl J, Mende F, Kato S, <strong>Kaplan HS</strong>, Latham R, Zimmer M</p>
+            <p class="pub-item__authors">Hums I, Riedl J, Mende F, Kato S, <strong><u>Kaplan HS</u></strong>, Latham R, Sonntag M, Traunmüller L, Zimmer M</p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.7554/eLife.14116" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
@@ -371,14 +341,12 @@
       <div class="pub-year-group__label">2015</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--cell">Cell</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>Cell</em> 163, 656–669 · 2015</span></div>
             <p class="pub-item__title">Global brain dynamics embed the motor command sequence of <em>Caenorhabditis elegans</em></p>
-            <p class="pub-item__authors">Kato S, <strong>Kaplan HS</strong>, Schrödel T, Skora S, Lindsay TH, Yemini E, Lockery S, Zimmer M</p>
+            <p class="pub-item__authors">Kato S<sup>*</sup>, <strong><u>Kaplan HS</u></strong><sup>*</sup>, Schrödel T<sup>*</sup>, Skora S, Lindsay TH, Yemini E, Lockery S, Zimmer M <span class="eq-contrib">*Equal contribution.</span></p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1016/j.cell.2015.09.034" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/26478179/" target="_blank" rel="noopener" class="pub-link">PubMed</a>
             </div>
           </div>
         </div>
@@ -390,11 +358,10 @@
       <div class="pub-year-group__label">2014</div>
       <div class="pub-list">
         <div class="pub-item" data-type="first">
-          <div class="pub-item__meta"><span class="pub-item__badge badge--plos">PLOS Biology</span></div>
           <div class="pub-item__content">
             <div class="pub-item__journal-line"><span class="pub-item__journal-info"><em>PLOS Biology</em> 12 (9), e1001959 · 2014</span></div>
             <p class="pub-item__title">Differentially timed extracellular signals synchronize pacemaker neuron clocks</p>
-            <p class="pub-item__authors">Collins B, <strong>Kaplan HS</strong>, Cavey M, Lelito KR, Bhatt D, et al.</p>
+            <p class="pub-item__authors">Collins B, <strong><u>Kaplan HS</u></strong>, Cavey M, Lelito KR, Bahle AH, Zhu Z, Macara AM, Roman G, Shafer OT, Blau J</p>
             <div class="pub-item__links">
               <a href="https://doi.org/10.1371/journal.pbio.1001959" target="_blank" rel="noopener" class="pub-link">Link to paper</a>
             </div>
@@ -415,10 +382,18 @@
     </div>
 
     <ul class="open-positions" data-reveal>
-      <li><strong>Graduate students</strong> — We accept rotation students year-round through the UVA Biology and Biomedical Sciences Graduate Programs. Email Harris with your CV and a brief note on your interests.</li>
-      <li><strong>Postdoctoral fellows</strong> — Email Harris your CV, a short description of your research interests, and names of 2–3 references.</li>
-      <li><strong>Undergraduates</strong> — Email Harris with your CV and a brief statement of interest.</li>
+      <li><strong>Graduate students</strong> — We accept rotation students year-round through various UVA graduate programs. E-mail Harris at <a href="mailto:mvr2qk@virginia.edu">mvr2qk@virginia.edu</a> with your CV and a brief note on your interests.</li>
+      <li><strong>Postdoctoral fellows</strong> — E-mail Harris at <a href="mailto:mvr2qk@virginia.edu">mvr2qk@virginia.edu</a> with your CV, a short description of your research interests, and names of 2–3 references.</li>
+      <li><strong>Undergraduates</strong> — E-mail Harris at <a href="mailto:mvr2qk@virginia.edu">mvr2qk@virginia.edu</a> with your CV and a brief statement of interest.</li>
     </ul>
+
+    <p class="join-photos-caption" data-reveal>Views of the lab area</p>
+    <div class="join-photos" data-reveal>
+      <img src="assets/images/Lab%20fun%20photos/Media%20(1).jpeg" alt="Lab fun photo 1">
+      <img src="assets/images/Lab%20fun%20photos/Media%20(3).jpeg" alt="Lab fun photo 2">
+      <img src="assets/images/Lab%20fun%20photos/Media%20(4).jpeg" alt="Lab fun photo 3">
+      <img src="assets/images/Lab%20fun%20photos/Media%20(8).jpeg" alt="Lab fun photo 4">
+    </div>
   </div>
 </section>
 
@@ -433,8 +408,7 @@
     <div class="footer-nav">
       <p class="footer-nav__title">Research</p>
       <ul>
-        <li><a href="#research">What We Study</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#research">Our research</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
       </ul>
