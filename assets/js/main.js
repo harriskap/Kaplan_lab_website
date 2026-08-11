@@ -84,3 +84,10 @@
   els.forEach(function (el) { observer.observe(el); });
 }());
 
+/* ---- Homepage title emphasis ---- */
+(function () {
+  var title = document.querySelector('.hero__lab-title');
+  if (!title) return;
+  title.style.setProperty('-webkit-text-stroke', '0.8px var(--navy)');
+}());
+
