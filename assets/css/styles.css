@@ -302,6 +302,8 @@ p { max-width: 65ch; }
 
 .hero__lab-title {
   font-family: var(--font-display);
+  font-weight: 1000;
+  -webkit-text-stroke: 1.5px var(--navy);
   font-size: clamp(3rem, 6vw, 4.4rem);
   color: var(--navy);
   margin: 0 0 .45rem;
