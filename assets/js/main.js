@@ -112,6 +112,9 @@
   var role = harrisCard.querySelector('.member-card__role');
   if (!role) return;
 
+  var roleLink = role.querySelector('.member-card__role-link');
+  if (!roleLink) return;
+
   var institution = document.createElement('p');
   institution.className = 'member-card__role member-card__uva-biology';
 
@@ -124,4 +127,18 @@
 
   institution.appendChild(link);
   role.insertAdjacentElement('afterend', institution);
+
+  function setSharedUnderline(active) {
+    [roleLink, link].forEach(function (item) {
+      item.style.textDecoration = active ? 'underline' : '';
+      item.style.textUnderlineOffset = active ? '0.16em' : '';
+    });
+  }
+
+  [roleLink, link].forEach(function (item) {
+    item.addEventListener('mouseenter', function () { setSharedUnderline(true); });
+    item.addEventListener('mouseleave', function () { setSharedUnderline(false); });
+    item.addEventListener('focus', function () { setSharedUnderline(true); });
+    item.addEventListener('blur', function () { setSharedUnderline(false); });
+  });
 }());
