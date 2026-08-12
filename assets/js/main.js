@@ -88,6 +88,6 @@
 (function () {
   var title = document.querySelector('.hero__lab-title');
   if (!title) return;
-  title.style.setProperty('-webkit-text-stroke', '0.8px var(--navy)');
+  title.style.setProperty('-webkit-text-stroke', '1.2px var(--navy)');
 }());
 
