@@ -91,3 +91,10 @@
   title.style.setProperty('-webkit-text-stroke', '1.2px var(--navy)');
 }());
 
+/* ---- PubMed profile links ---- */
+(function () {
+  var pubmedUrl = 'https://pubmed.ncbi.nlm.nih.gov/?term=harris+s+kaplan&sort=date';
+  document.querySelectorAll('a[href*="pubmed.ncbi.nlm.nih.gov"]').forEach(function (a) {
+    a.href = pubmedUrl;
+  });
+}());
