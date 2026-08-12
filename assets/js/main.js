@@ -98,3 +98,30 @@
     a.href = pubmedUrl;
   });
 }());
+
+/* ---- Harris Kaplan UVA Biology link ---- */
+(function () {
+  var cards = document.querySelectorAll('.member-card');
+  var harrisCard = null;
+  cards.forEach(function (card) {
+    var name = card.querySelector('.member-card__name');
+    if (name && name.textContent.trim() === 'Harris Kaplan') harrisCard = card;
+  });
+  if (!harrisCard || harrisCard.querySelector('.member-card__uva-biology')) return;
+
+  var role = harrisCard.querySelector('.member-card__role');
+  if (!role) return;
+
+  var institution = document.createElement('p');
+  institution.className = 'member-card__role member-card__uva-biology';
+
+  var link = document.createElement('a');
+  link.href = 'https://bio.as.virginia.edu/people/harris-kaplan';
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.className = 'member-card__role-link';
+  link.textContent = 'UVA Biology';
+
+  institution.appendChild(link);
+  role.insertAdjacentElement('afterend', institution);
+}());
