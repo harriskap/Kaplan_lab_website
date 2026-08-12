@@ -128,17 +128,8 @@
   institution.appendChild(link);
   role.insertAdjacentElement('afterend', institution);
 
-  function setSharedUnderline(active) {
-    [roleLink, link].forEach(function (item) {
-      item.style.textDecoration = active ? 'underline' : '';
-      item.style.textUnderlineOffset = active ? '0.16em' : '';
-    });
-  }
-
   [roleLink, link].forEach(function (item) {
-    item.addEventListener('mouseenter', function () { setSharedUnderline(true); });
-    item.addEventListener('mouseleave', function () { setSharedUnderline(false); });
-    item.addEventListener('focus', function () { setSharedUnderline(true); });
-    item.addEventListener('blur', function () { setSharedUnderline(false); });
+    item.style.textDecoration = 'underline';
+    item.style.textUnderlineOffset = '0.16em';
   });
 }());
