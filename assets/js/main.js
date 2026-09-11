@@ -168,3 +168,56 @@
   addMember('Maria Longenecker', 'Lab technician', 'ngr8tk@virginia.edu', 'assets/images/Maria_Longenecker.jpg');
   addMember('Joanne Li', 'Undergraduate', 'fzx3xh@virginia.edu', 'assets/images/Joanne_Li.JPG');
 }());
+
+/* ---- Additional news items ---- */
+(function () {
+  var timeline = document.querySelector('#news .news-timeline');
+  if (!timeline) return;
+
+  var items = Array.from(timeline.querySelectorAll('.tl-item'));
+  var benItem = items.find(function (item) {
+    var heading = item.querySelector('h4');
+    return heading && heading.textContent.trim() === 'Ben Bellanger joins the lab!';
+  });
+  if (!benItem) return;
+
+  function hasNewsItem(title) {
+    return Array.from(timeline.querySelectorAll('.tl-item h4')).some(function (heading) {
+      return heading.textContent.trim() === title;
+    });
+  }
+
+  function makeNewsItem(title, text) {
+    var item = document.createElement('div');
+    item.className = 'tl-item';
+    item.innerHTML =
+      '<div class="tl-item__date">August 2026</div>' +
+      '<h4>' + title + '</h4>' +
+      '<p>' + text + '</p>';
+    return item;
+  }
+
+  var insertionPoint = benItem;
+
+  if (!hasNewsItem('Maria Longenecker joins the lab!')) {
+    var mariaItem = makeNewsItem(
+      'Maria Longenecker joins the lab!',
+      'Maria Longenecker joins the Kaplan Lab as a lab technician. Welcome, Maria!'
+    );
+    insertionPoint.insertAdjacentElement('afterend', mariaItem);
+    insertionPoint = mariaItem;
+  } else {
+    insertionPoint = Array.from(timeline.querySelectorAll('.tl-item')).find(function (item) {
+      var heading = item.querySelector('h4');
+      return heading && heading.textContent.trim() === 'Maria Longenecker joins the lab!';
+    }) || insertionPoint;
+  }
+
+  if (!hasNewsItem('Joanne Li joins the lab!')) {
+    var joanneItem = makeNewsItem(
+      'Joanne Li joins the lab!',
+      'Joanne Li joins the Kaplan Lab as an undergraduate researcher. Welcome, Joanne!'
+    );
+    insertionPoint.insertAdjacentElement('afterend', joanneItem);
+  }
+}());
