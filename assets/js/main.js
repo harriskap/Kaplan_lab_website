@@ -133,3 +133,38 @@
     item.style.textUnderlineOffset = '0.16em';
   });
 }());
+
+/* ---- Additional lab members ---- */
+(function () {
+  var grid = document.querySelector('#team .member-grid');
+  if (!grid) return;
+
+  function hasMember(name) {
+    return Array.from(grid.querySelectorAll('.member-card__name')).some(function (el) {
+      return el.textContent.trim() === name;
+    });
+  }
+
+  function addMember(name, role, email, imagePath) {
+    if (hasMember(name)) return;
+
+    var card = document.createElement('div');
+    card.className = 'member-card';
+    card.innerHTML =
+      '<div class="member-card__photo">' +
+        '<img src="' + imagePath + '" alt="' + name + ', ' + role + '">' +
+      '</div>' +
+      '<div class="member-card__info">' +
+        '<h3 class="member-card__name">' + name + '</h3>' +
+        '<p class="member-card__role">' + role + '</p>' +
+        '<p class="member-card__email">' +
+          '<a href="mailto:' + email + '" class="member-card__email-link" aria-label="Email ' + name + '">E-mail</a>' +
+        '</p>' +
+      '</div>';
+
+    grid.appendChild(card);
+  }
+
+  addMember('Maria Longenecker', 'Lab technician', 'ngr8tk@virginia.edu', 'assets/images/Maria_Longenecker.jpg');
+  addMember('Joanne Li', 'Undergraduate', 'fzx3xh@virginia.edu', 'assets/images/Joanne_Li.JPG');
+}());
