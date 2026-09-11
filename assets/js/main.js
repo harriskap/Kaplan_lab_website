@@ -91,12 +91,40 @@
   title.style.setProperty('-webkit-text-stroke', '1.2px var(--navy)');
 }());
 
+/* ---- Keep homepage subtitle at no more than 60% of title size ---- */
+(function () {
+  var title = document.querySelector('.hero__lab-title');
+  var subtitle = document.querySelector('.hero__headline');
+  if (!title || !subtitle) return;
+
+  function capSubtitleSize() {
+    subtitle.style.fontSize = '';
+    var titleSize = parseFloat(window.getComputedStyle(title).fontSize);
+    var subtitleSize = parseFloat(window.getComputedStyle(subtitle).fontSize);
+    var maxSubtitleSize = titleSize * 0.60;
+
+    if (subtitleSize > maxSubtitleSize) {
+      subtitle.style.fontSize = maxSubtitleSize + 'px';
+    }
+  }
+
+  capSubtitleSize();
+  window.addEventListener('resize', capSubtitleSize);
+}());
+
 /* ---- PubMed profile links ---- */
 (function () {
   var pubmedUrl = 'https://pubmed.ncbi.nlm.nih.gov/?term=harris+s+kaplan&sort=date';
   document.querySelectorAll('a[href*="pubmed.ncbi.nlm.nih.gov"]').forEach(function (a) {
     a.href = pubmedUrl;
   });
+}());
+
+/* ---- Left-align Nature publication image ---- */
+(function () {
+  var pubHero = document.querySelector('#publications .pub-hero');
+  if (!pubHero) return;
+  pubHero.style.justifyContent = 'flex-start';
 }());
 
 /* ---- Harris Kaplan UVA Biology link ---- */
@@ -169,21 +197,15 @@
   addMember('Joanne Li', 'Undergraduate', 'fzx3xh@virginia.edu', 'assets/images/Joanne_Li.JPG');
 }());
 
-/* ---- Additional news items ---- */
+/* ---- Additional news items, newest first ---- */
 (function () {
   var timeline = document.querySelector('#news .news-timeline');
   if (!timeline) return;
 
-  var items = Array.from(timeline.querySelectorAll('.tl-item'));
-  var benItem = items.find(function (item) {
-    var heading = item.querySelector('h4');
-    return heading && heading.textContent.trim() === 'Ben Bellanger joins the lab!';
-  });
-  if (!benItem) return;
-
-  function hasNewsItem(title) {
-    return Array.from(timeline.querySelectorAll('.tl-item h4')).some(function (heading) {
-      return heading.textContent.trim() === title;
+  function findNewsItem(title) {
+    return Array.from(timeline.querySelectorAll('.tl-item')).find(function (item) {
+      var heading = item.querySelector('h4');
+      return heading && heading.textContent.trim() === title;
     });
   }
 
@@ -197,27 +219,26 @@
     return item;
   }
 
-  var insertionPoint = benItem;
+  var benItem = findNewsItem('Ben Bellanger joins the lab!');
+  if (!benItem) return;
 
-  if (!hasNewsItem('Maria Longenecker joins the lab!')) {
-    var mariaItem = makeNewsItem(
+  var mariaItem = findNewsItem('Maria Longenecker joins the lab!');
+  if (!mariaItem) {
+    mariaItem = makeNewsItem(
       'Maria Longenecker joins the lab!',
       'Maria Longenecker joins the Kaplan Lab as a lab technician. Welcome, Maria!'
     );
-    insertionPoint.insertAdjacentElement('afterend', mariaItem);
-    insertionPoint = mariaItem;
-  } else {
-    insertionPoint = Array.from(timeline.querySelectorAll('.tl-item')).find(function (item) {
-      var heading = item.querySelector('h4');
-      return heading && heading.textContent.trim() === 'Maria Longenecker joins the lab!';
-    }) || insertionPoint;
   }
 
-  if (!hasNewsItem('Joanne Li joins the lab!')) {
-    var joanneItem = makeNewsItem(
+  var joanneItem = findNewsItem('Joanne Li joins the lab!');
+  if (!joanneItem) {
+    joanneItem = makeNewsItem(
       'Joanne Li joins the lab!',
       'Joanne Li joins the Kaplan Lab as an undergraduate researcher. Welcome, Joanne!'
     );
-    insertionPoint.insertAdjacentElement('afterend', joanneItem);
   }
+
+  // Top-to-bottom order should be Joanne, Maria, Ben, then the lab opening item.
+  timeline.insertBefore(mariaItem, benItem);
+  timeline.insertBefore(joanneItem, mariaItem);
 }());
