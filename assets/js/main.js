@@ -242,3 +242,9 @@
   timeline.insertBefore(mariaItem, benItem);
   timeline.insertBefore(joanneItem, mariaItem);
 }());
+/* ---- Remove trailing exclamation points from news titles ---- */
+(function () {
+  document.querySelectorAll('#news .tl-item h4').forEach(function (heading) {
+    heading.textContent = heading.textContent.replace(/!$/, '');
+  });
+}());
