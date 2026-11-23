@@ -195,6 +195,7 @@
 
   addMember('Maria Longenecker', 'Lab technician', 'ngr8tk@virginia.edu', 'assets/images/Maria_Longenecker.jpg');
   addMember('Joanne Li', 'Undergraduate', 'fzx3xh@virginia.edu', 'assets/images/Joanne_Li.JPG');
+  addMember('Varuni Rastogi', 'Phd Student', 'bub4ha@virginia.edu', 'assets/images/Varuni_Rastogi.jpg');
 }());
 
 /* ---- Additional news items, newest first ---- */
@@ -209,11 +210,11 @@
     });
   }
 
-  function makeNewsItem(title, text) {
+  function makeNewsItem(title, text, date) {
     var item = document.createElement('div');
     item.className = 'tl-item';
     item.innerHTML =
-      '<div class="tl-item__date">August 2026</div>' +
+      '<div class="tl-item__date">' + (date || 'August 2026') + '</div>' +
       '<h4>' + title + '</h4>' +
       '<p>' + text + '</p>';
     return item;
@@ -241,6 +242,11 @@
   // Top-to-bottom order should be Joanne, Maria, Ben, then the lab opening item.
   timeline.insertBefore(mariaItem, benItem);
   timeline.insertBefore(joanneItem, mariaItem);
+  timeline.prepend(makeNewsItem(
+    'Varuni Rastogi joins the lab',
+    'Varuni Rastogi joins the Kaplan Lab as a PhD Student. Welcome, Varuni!',
+    'November 2026'
+  ));
 }());
 /* ---- Remove trailing exclamation points from news titles ---- */
 (function () {
